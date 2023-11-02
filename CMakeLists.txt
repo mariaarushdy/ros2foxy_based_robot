@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(ROS-based-Robot)
+project(ros_based_robot)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
