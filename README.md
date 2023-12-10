@@ -32,8 +32,8 @@ Ensure that you have the following installed:
 2. Build the ROS workspace:
 
     ```bash
-    cd your-robot-repo
-    colcon build
+    cd your-work-space
+    colcon build --symlink-install
     ```
 
 3. Source the ROS workspace:
@@ -49,4 +49,4 @@ Ensure that you have the following installed:
 To launch the robot in Gazebo simulation, use:
 
 ```bash
-ros2 launch your_robot_package gazebo_launch.py
+ros2 launch your_robot_package launch_sim.py
