@@ -1,7 +1,52 @@
-## Robot Package Template
+# ROS-Based Robot Project
 
-This is a GitHub template. You can make your own copy by clicking the green "Use this template" button.
+## Overview
 
-It is recommended that you keep the repo/package name the same, but if you do change it, ensure you do a "Find all" using your IDE (or the built-in GitHub IDE by hitting the `.` key) and rename all instances of `ros_based_robot` to whatever your project's name is.
+This project presents a ROS (Robot Operating System) based robot equipped with a body, camera, and LIDAR sensor. The robot's physical attributes are defined using URDF (Unified Robot Description Format) files. It is designed to be compatible with both Gazebo control and ROS 2 Control for navigation.
 
-Note that each directory currently has at least one file in it to ensure that git tracks the files (and, consequently, that a fresh clone has direcctories present for CMake to find). These example files can be removed if required (and the directories can be removed if `CMakeLists.txt` is adjusted accordingly).
+The project is implemented using ROS 2 Foxy Fitzroy.
+
+## Features
+
+- URDF files define the robot's structure and components.
+- Integrated body, camera, and LIDAR sensor for comprehensive sensing capabilities.
+- Supports Gazebo control for simulation.
+- Utilizes ROS 2 Control for real-world robot control and navigation.
+
+## Prerequisites
+
+Ensure that you have the following installed:
+
+- ROS 2 Foxy Fitzroy
+- Gazebo (for simulation)
+- ROS 2 Control (for real-world control)
+
+## Installation
+
+1. Clone the repository to your ROS workspace:
+
+    ```bash
+    git clone https://github.com/your-username/your-robot-repo.git
+    ```
+
+2. Build the ROS workspace:
+
+    ```bash
+    cd your-robot-repo
+    colcon build
+    ```
+
+3. Source the ROS workspace:
+
+    ```bash
+    source install/setup.bash
+    ```
+
+## Usage
+
+### Gazebo Simulation
+
+To launch the robot in Gazebo simulation, use:
+
+```bash
+ros2 launch your_robot_package gazebo_launch.py
