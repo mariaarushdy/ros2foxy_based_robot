@@ -1,4 +1,4 @@
-# ROS-Based Robot Project
+# ROS2-Based Robot Project
 
 ## Overview
 
